@@ -3,31 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RWD-1</title>
     <style>
-        .container1{
-            padding: 10px;
-            background-color: #e0e0;
-            display:flex;
-
+        body{
+            box-sizing: border-box;
         }
-        @media screen and(max-width: 576px){
+        .container1{
+            display:flex;
+        }
+        .box{
+            padding: 10px;
+            background-color:#00e0e0;
+            border:3px solid #bbb;
+            border-radius:5px;
+            margin:10px;
+        }
+        .container2{
+            display:flex;
+            flex-wrap: wrap;
+        }
+        .items{
+            padding: 10px;
+            background-color:#00e000;
+            border:3px solid #bbb000;
+            border-radius:5px;
+            margin:10px;
+        }
+
+        @media screen and (max-width: 557px){
             .container1{
-                display: block;
+                flex-direction: column;
             }
             .container2{
                 display:flex;
                 flex-wrap: wrap;
-            }
-        }
+            }}
+        
     </style>
 </head>
 <body>
     <main>
         <div class="container1">
-            <div class="box">box-1</div>
-            <div class="box">box-2</div>
-            <div class="box">box-3</div>
+            <div class="box">box-1 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere quis pariatur velit debitis necessitatibus. Enim quibusdam deleniti, iusto reiciendis, id numquam voluptates, ea incidunt repellendus tenetur veritatis laudantium quos optio?</div>
+            <div class="box">box-2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, saepe voluptatum error deserunt aliquam asperiores eius sapiente adipisci impedit incidunt facilis tempore totam quia nisi, ducimus consequatur velit nam repellendus.</div>
+            <div class="box">box-3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam earum laudantium eaque labore eveniet nihil ipsa autem quae dolor ea quo quisquam, nostrum perferendis assumenda. Similique dolor voluptatibus deserunt quaerat?</div>
         </div>
         <div class="container2">
             <div class="items">item1</div>
